@@ -14,6 +14,15 @@ Se realiza el despliegue a través del comando
  ## Desplegar Jenkins y restaurar
  Se ejecuta los siguientes comandos(en el archivo comandosMontarAmbiente.sh estan las lineas correspndientes para levantar y restaurar backup de jenkins)
  ```
- git clone https://github.com/edixred/Docker.git
+ git clone https://github.com/edo2004/Docker.git
  sh Docker/comandosMontarAmbiente.sh
+
+ ```
+ 
+ ## Otra instancia
+Crear una nueva instancia, clonar el repositorio y ejecutar:
+  ```
+ git clone https://github.com/edo2004/Docker.git
+ sh Docker/comandosNuevaInstancia.sh
+
  ```
