@@ -19,8 +19,8 @@ sleep 20
 echo ______________ SonarQube Iniciado______________
 
 #Exportar Jenkins
-docker commit -a "Eduar" -m "Primera imagen" jenkins jenkins
-docker save -o backup_jenkins.tar jenkins
+docker commit -a "Eduar" -m "Primera imagen" jenkins Demo_jenkins
+docker save -o backup_jenkins.tar Demo_jenkins
 
 echo ______________ Imagen de jenkins exportada______________
 
