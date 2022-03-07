@@ -6,7 +6,7 @@ echo ______________ restaurando BACKUP Jobs ______________
 cp Docker/AllBackup jenkins/
 echo ______________ Descargando BACKUP Plugins ______________
 chmod 400 Docker/demokey
-scp -i Docker/demokey ubuntu@ec2-34-205-146-122.compute-1.amazonaws.com:/home/ubuntu/bkjenkins.tar .
+scp -i Docker/demokey ubuntu@ec2-54-86-55-166.compute-1.amazonaws.com:/home/ubuntu/bkjenkins.tar .
 echo ______________ Restaurando BACKUP Plugins ______________
 tar -xvf bkjenkins.tar
 rm -rf bkjenkins.tar
@@ -25,4 +25,4 @@ docker restart jenkins
 #echo ______________ Imagen de jenkins exportada______________
 
 #Subir al servidor de Aws
-#scp -i Docker/demokey backup_jenkins.tar ubuntu@ec2-34-205-146-122.compute-1.amazonaws.com:/home/ubuntu/backupJenkins.tar
+#scp -i Docker/demokey backup_jenkins.tar ubuntu@ec2-54-86-55-166.compute-1.amazonaws.com:/home/ubuntu/backupJenkins.tar
