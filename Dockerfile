@@ -4,7 +4,7 @@ FROM jenkins/jenkins:latest
 #WORKDIR /usr/src/app
  CMD ["bash"]
 # Install app dependencies
-COPY /root/jenkins /var/jenkins_home
+COPY /var/jenkins_home .
 
 #RUN npm install
 
