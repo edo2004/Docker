@@ -1,12 +1,10 @@
-FROM node:latest
+FROM jenkins/jenkins:latest
 
 # Create app directory
 #WORKDIR /usr/src/app
-
+CMD ["bash"]
 # Install app dependencies
-COPY ~/jenkins:/var/jenkins_home ./
-COPY /var/run/docker.sock:/var/run/docker.sock ./
-COPY /usr/local/bin/docker:/usr/local/bin/docker ./
+COPY ~/jenkins /var/jenkins_home
 
 #RUN npm install
 
@@ -14,4 +12,5 @@ COPY /usr/local/bin/docker:/usr/local/bin/docker ./
 #COPY . .
 
 EXPOSE 9000:9000
-CMD [ "node", "server.js" ]
+ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]
+#CMD [ "node", "server.js" ]
