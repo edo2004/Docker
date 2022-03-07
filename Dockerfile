@@ -2,9 +2,9 @@ FROM jenkins/jenkins:latest
 
 # Create app directory
 #WORKDIR /usr/src/app
-CMD ["bash"]
+ CMD ["bash"]
 # Install app dependencies
-COPY ~/jenkins /var/jenkins_home
+COPY /root/jenkins /var/jenkins_home
 
 #RUN npm install
 
