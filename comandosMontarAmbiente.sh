@@ -18,11 +18,11 @@ docker restart jenkins
 #sleep 20
 #echo ______________ SonarQube Iniciado______________
 
-#Exportar Jenkins
-#docker commit -a "Eduar" -m "Primera imagen" jenkins demo-jenkins
-#docker save -o backup_jenkins.tar demo-jenkins
+Exportar Jenkins
+docker commit -a "Eduar" -m "Primera imagen" jenkins demo-jenkins
+docker save -o backup_jenkins.tar demo-jenkins
 
-#echo ______________ Imagen de jenkins exportada______________
+echo ______________ Imagen de jenkins exportada______________
 
 #Subir al servidor de Aws
-#scp -i Docker/demokey backup_jenkins.tar ubuntu@ec2-54-86-55-166.compute-1.amazonaws.com:/home/ubuntu/backupJenkins.tar
+scp -i Docker/demokey backup_jenkins.tar ubuntu@ec2-54-86-55-166.compute-1.amazonaws.com:/home/ubuntu/backupJenkins.tar
