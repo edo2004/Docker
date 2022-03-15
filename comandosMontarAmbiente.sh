@@ -14,7 +14,7 @@ docker restart jenkins
 #sleep 20
 #echo ______________ Reinicio Terminado ______________
 #echo ______________ Iniciando SonarQube p:9100 ______________
-#docker-compose -f Docker/SonarQube.yml up -d
+docker-compose -f Docker/SonarQube.yml up -d
 #sleep 20
 #echo ______________ SonarQube Iniciado______________
 
