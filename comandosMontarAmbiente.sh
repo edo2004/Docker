@@ -6,7 +6,7 @@ echo ______________ restaurando BACKUP Jobs ______________
 cp Docker/AllBackup jenkins/
 echo ______________ Descargando BACKUP Plugins ______________
 chmod 400 Docker/demokey
-scp -i Docker/demokey ubuntu@ec2-54-86-55-166.compute-1.amazonaws.com:/home/ubuntu/bkjenkins.tar .
+scp -i Docker/demokey ubuntu@ec2-44-201-86-51.compute-1.amazonaws.com:/home/ubuntu/bkjenkins.tar .
 echo ______________ Restaurando BACKUP Plugins ______________
 tar -xvf bkjenkins.tar
 rm -rf bkjenkins.tar
